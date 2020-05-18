@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Header } from '../components/header'
-import { Footer } from '../components/footer'
+import { Layout } from '../components/layout'
 
 export const IndexPage = () => {
   return (
-    <>
-      <Header></Header>
+    <Layout>
       <h1>Hello.</h1>
       <h2>Welcome to a Gatsby Site</h2>
       <p>
@@ -15,8 +13,7 @@ export const IndexPage = () => {
       <p>
         <a href="https://github.com/pedroeldiablo">Find me on Github</a>
       </p>
-      <Footer></Footer>
-    </>
+    </Layout>
   )
 }
 

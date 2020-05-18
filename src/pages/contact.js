@@ -1,15 +1,12 @@
 import React from 'react'
-import { Header } from '../components/header'
-import { Footer } from '../components/footer'
+import { Layout } from '../components/layout'
 
 export const ContactPage = () => {
   return (
-    <>
-      <Header></Header>
+    <Layout>
       <h1>Contact Page</h1>
       <h2>Contact details will go here</h2>
-      <Footer></Footer>
-    </>
+    </Layout>
   )
 }
 
