@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Header } from './header'
 import { Footer } from './footer'
+import '../styles/index.scss'
 
 export const Layout = props => {
   return (
