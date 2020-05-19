@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "env-cmd -f .env.development gatsby develop",
+    "develop": "gatsby develop",
+    "playground": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint 'src/**/*.[jt]s?(x)' && remark . --frail",
     "lint-fix": "eslint --fix 'src/**/*.[jt]s?(x)'",
