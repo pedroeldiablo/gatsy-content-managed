@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 module.exports = {
-  siteMetaData: {
+  siteMetadata: {
     title: 'Gatsby Content Managed',
     author: 'pedroeldiablo',
   },

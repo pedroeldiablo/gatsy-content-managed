@@ -6,7 +6,7 @@ export const Header = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
-        siteMetaData {
+        siteMetadata {
           title
         }
       }
@@ -14,7 +14,7 @@ export const Header = () => {
   `)
   return (
     <header>
-      <h1>Manage Me - {data.site.siteMetaData.title}</h1>
+      <h1>Manage Me - {data.site.siteMetadata.title}</h1>
       <nav>
         <ul className={headerStyles.navbar}>
           <li>
