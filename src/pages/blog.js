@@ -17,6 +17,9 @@ export const BlogPage = () => {
             }
             excerpt
             timeToRead
+            fields {
+              slug
+            }
           }
         }
       }
@@ -28,13 +31,13 @@ export const BlogPage = () => {
       <p>Posts will show up here later once set-up</p>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <Link to={node.id}>
+          <Link to={node.fields.slug}>
             <h2>
               {node.frontmatter.title} - {node.frontmatter.date}
             </h2>
           </Link>
           <p>{node.excerpt}</p>
-          <Link to={node.id}>Go to blog</Link>
+          <Link to={node.fields.slug}>Go to blog</Link>
           <p>Time to read: {node.timeToRead}</p>
         </div>
       ))}
