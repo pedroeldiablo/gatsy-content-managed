@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+.link {
+    color: purple;
+    text-decoration: none;
+    margin: 0 1rem 0 0;
+}
+
+.link-active {
+    color: peachpuff;
+}
