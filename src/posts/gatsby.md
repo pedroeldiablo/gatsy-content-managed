@@ -6,6 +6,8 @@ description: 'useState'
 
 # useState
 
+![Thinking](./thinking-about-code2.png)
+
 ```
 const [state, setState] = useState(initialState);
 ```
