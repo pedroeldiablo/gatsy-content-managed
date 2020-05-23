@@ -15,16 +15,15 @@ export const query = graphql`
   }
 `
 export default props => {
-  console.log({ props })
+  const { title, date } = props.data.markdownRemark.frontmatter
+  const { html } = props.data.markdownRemark
   return (
     <Layout>
       <div>
         <p>Template for post</p>
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <h2>{props.data.markdownRemark.frontmatter.date}</h2>
-        <div
-          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-        />
+        <h1>{title}</h1>
+        <h2>{date}</h2>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   )
