@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { Layout } from '../components/layout'
+import { Head } from '../components/head'
 
 export const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -43,6 +44,7 @@ export const BlogPage = () => {
   //   `)
   return (
     <Layout>
+      <Head title="Blog" />
       <h1>Blog</h1>
       <p>Posts will show up here later once set-up</p>
       {data.allContentfulBlogPost.edges.map(({ node }) => (
