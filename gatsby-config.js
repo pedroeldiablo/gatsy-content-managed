@@ -3,12 +3,20 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Content Managed',
     author: 'pedroeldiablo',
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-filesystem`,
