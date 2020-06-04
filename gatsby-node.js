@@ -12,12 +12,34 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      articles: allContentfulArticle {
+        edges {
+          node {
+            id
+            slug
+          }
+        }
+      }
     }
   `).then(result => {
+    if (result.errors) {
+      throw result.errors
+    }
+
     result.data.allContentfulBlogPost.edges.forEach(({ node }) => {
       createPage({
         path: node.slug,
         component: path.resolve('./src/templates/blog-post.js'),
+        context: {
+          slug: node.slug,
+        },
+      })
+    })
+
+    result.data.articles.edges.forEach(({ node }) => {
+      createPage({
+        path: node.slug,
+        component: path.resolve('./src/templates/article.js'),
         context: {
           slug: node.slug,
         },

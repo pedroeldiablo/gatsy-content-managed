@@ -46,6 +46,15 @@ export const Header = () => {
           </li>
           <li>
             <Link
+              to="/article"
+              className={headerStyles.link}
+              activeClassName={headerStyles.linkActive}
+            >
+              Articles
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/contact"
               className={headerStyles.link}
               activeClassName={headerStyles.linkActive}
