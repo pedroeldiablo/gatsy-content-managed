@@ -7,6 +7,7 @@ export const NotFound = () => (
   <Layout>
     <Head title="404" />
     <h1>404 - nothing here my dear</h1>
+    <p>Why not head home?</p>
     <p>
       <Link to="/">Take me home.</Link>
     </p>
