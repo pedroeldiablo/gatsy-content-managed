@@ -49,6 +49,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
