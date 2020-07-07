@@ -18,7 +18,7 @@ module.exports = {
         description: `Do cool things and make your life better.`,
         lang: `en`,
         display: `standalone`,
-        icon: `src/images/cmyk.png`,
+        icon: `src/images/cmykool.png`,
         start_url: `/`,
         background_color: `#FF00FF`,
         theme_color: `#fff`,
