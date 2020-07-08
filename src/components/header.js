@@ -30,10 +30,11 @@ const NavContainer = styled.nav`
   grid-row: 2 / 5;
   li {
     display: flex;
-    align-content: center;
     a:hover {
       background-color: red;
       color: white;
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 `
