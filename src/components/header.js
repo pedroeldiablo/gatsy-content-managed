@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
+import theme from '../theme/theme'
 import headerStyles from './header.module.scss'
 
 const HeaderContainer = styled.header`
@@ -17,6 +18,7 @@ const HeaderContainer = styled.header`
 
   h1 {
     display: grid;
+    color: ${theme.colors.brand};
     align-self: start;
     width: 100%;
     grid-column: 3 / 5;
