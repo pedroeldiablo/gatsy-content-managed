@@ -103,4 +103,70 @@ export const GlobalStyle = createGlobalStyle`
        url('${PlayfairDisplay600ItalicTTF}') format('truetype'), /* Safari, Android, iOS */
        url('${PlayfairDisplay600ItalicSVG}#PlayfairDisplay') format('svg'); /* Legacy iOS */
 }
+
+/* teko-300 - latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/teko/teko-v9-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Teko Light'), local('Teko-Light'),
+       url('../fonts/teko/teko-v9-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/teko/teko-v9-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/teko/teko-v9-latin-300.svg#Teko') format('svg'); /* Legacy iOS */
+}
+/* teko-500 - latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/teko/teko-v9-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Teko Medium'), local('Teko-Medium'),
+       url('../fonts/teko/teko-v9-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/teko/teko-v9-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/teko/teko-v9-latin-500.svg#Teko') format('svg'); /* Legacy iOS */
+}
+/* teko-regular - latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/teko/teko-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Teko Regular'), local('Teko-Regular'),
+       url('../fonts/teko/teko-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/teko/teko-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/teko/teko-v9-latin-regular.svg#Teko') format('svg'); /* Legacy iOS */
+}
+/* teko-600 - latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/teko/teko-v9-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Teko SemiBold'), local('Teko-SemiBold'),
+       url('../fonts/teko/teko-v9-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/teko/teko-v9-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/teko/teko-v9-latin-600.svg#Teko') format('svg'); /* Legacy iOS */
+}
+/* teko-700 - latin */
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/teko/teko-v9-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Teko Bold'), local('Teko-Bold'),
+       url('../fonts/teko/teko-v9-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/teko/teko-v9-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/teko/teko-v9-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/teko/teko-v9-latin-700.svg#Teko') format('svg'); /* Legacy iOS */
+}
 `

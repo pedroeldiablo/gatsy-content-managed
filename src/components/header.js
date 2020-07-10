@@ -32,6 +32,47 @@ const NavContainer = styled.nav`
   grid-row: 2 / 5;
   li {
     display: flex;
+    position: relative;
+    :after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      bottom: -3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition-duration: 0.7s;
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+    }
+    :before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      bottom: 0px;
+      transform: scaleY(0);
+      transform-origin: left;
+      transition-duration: 0.7s;
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+    }
+    :hover {
+      :after {
+        background-color: currentColor;
+        transform: scaleX(1);
+        transform-origin: 100% 0;
+        transition-duration: 1s;
+      }
+      :before {
+        background-color: currentColor;
+        transform-origin: 0 0;
+        transform: scaleY(1);
+        transition-duration: 1s;
+      }
+    }
     a:hover {
       background-color: red;
       color: white;
