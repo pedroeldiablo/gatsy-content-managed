@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import { Layout } from '../components/layout'
+import { Layout } from '../components/Layout/Layout'
 import { Head } from '../components/head'
 
 export const BlogPage = () => {

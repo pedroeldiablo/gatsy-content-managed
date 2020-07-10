@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Layout } from '../components/layout'
+import { Layout } from '../components/Layout/Layout'
 import { Head } from '../components/head'
 
 export const Title = styled.h1`
