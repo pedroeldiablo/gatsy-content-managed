@@ -5,4 +5,7 @@ export const colors = {
   navy: '#004175',
   brand: '#ff0011',
   palegrey: '#f1f1f1',
+  brandMagenta: '#FF00F2',
+  brandCyan: '#00FFFF',
+  brandYellow: '#FFFF00',
 }
