@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../components/Layout/Layout'
 import { Head } from '../components/head'
+import { options } from './renderMethods'
 
 export const query = graphql`
   query($slug: String!) {
@@ -25,15 +26,6 @@ export default props => {
   const {
     json,
   } = props.data.contentfulArticle.childContentfulArticleProseRichTextNode
-  const options = {
-    renderNode: {
-      'embedded-asset-block': node => {
-        const alt = node.data.target.fields.description['en-US']
-        const { url } = node.data.target.fields.file['en-US']
-        return <img alt={alt} src={url} />
-      },
-    },
-  }
   return (
     <Layout>
       <Head title={title} />

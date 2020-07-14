@@ -9,8 +9,6 @@ import { Footer } from '../footer'
 import '../../styles/index.scss'
 import { GlobalStyle } from './Layout.styles'
 
-console.log({ GlobalStyle })
-
 const LayoutContainer = styled.div`
   font-family: ${theme.fonts.title};
   color: ${theme.colors.body};
@@ -31,10 +29,10 @@ export const Layout = props => {
       <GlobalStyle />
       <LayoutContainer>
         <Header></Header>
-        <Box width={[1, 1, 1 / 2]} p={4} mb={3} bg="tomato">
+        {/* <Box width={[1, 1, 1 / 2]} p={4} mb={3} bg="tomato">
           This is a tomato box, with responsive width, some padding, and margin
           bottom
-        </Box>
+        </Box> */}
         {props.children}
         <Footer></Footer>
       </LayoutContainer>

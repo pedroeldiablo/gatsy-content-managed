@@ -25,6 +25,7 @@ export const ArticlePage = () => {
       {data.allContentfulArticle.nodes.map(node => (
         <div key={node.id}>
           <Link to={node.slug}>
+            <h2>What is the slug? {node.slug}</h2>
             <h2>
               {node.title} {node.author ? `- ${node.author.name}` : ''}
             </h2>
