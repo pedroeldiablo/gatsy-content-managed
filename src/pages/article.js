@@ -24,13 +24,13 @@ export const ArticlePage = () => {
       <h1>Articles</h1>
       {data.allContentfulArticle.nodes.map(node => (
         <div key={node.id}>
-          <Link to={node.slug}>
+          <Link to={`/${node.slug}`}>
             <h2>What is the slug? {node.slug}</h2>
             <h2>
               {node.title} {node.author ? `- ${node.author.name}` : ''}
             </h2>
           </Link>
-          <Link to={node.slug}>Go to article</Link>
+          <Link to={`/${node.slug}`}>Go to article</Link>
         </div>
       ))}
     </Layout>
