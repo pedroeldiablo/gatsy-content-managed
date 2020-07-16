@@ -94,7 +94,7 @@ export const Header = () => {
   `)
   return (
     <HeaderContainer>
-      <h1>Manage Me - {data.site.siteMetadata.title}</h1>
+      {/* <h1>Manage Me - {data.site.siteMetadata.title}</h1> */}
       <NavContainer>
         <ul className={headerStyles.navbar}>
           <li>
