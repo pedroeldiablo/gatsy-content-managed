@@ -68,10 +68,10 @@ const ATagComponent = styled.a`
   display: inline-block;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  box-shadow: 20px -10px 1px -5px rgba(255, 000, 000, 0.2),
+  /* box-shadow: 20px -10px 1px -5px rgba(255, 000, 000, 0.2),
     -5px -5px 1px 0 rgba(00, 000, 00, 0.5),
     5px 5px 1px 0 rgba(255, 255, 000, 0.5),
-    5px 5px 1px 0 rgba(000, 255, 000, 0.5);
+    5px 5px 1px 0 rgba(000, 255, 000, 0.5); */
 
   /* box-shadow: 8px 8px 10px 0 #ff1492, -5px -5px 5px 0 #00f, 5px 5px 15px 0 #ff0; */
   /* border-radius: 16px; */
