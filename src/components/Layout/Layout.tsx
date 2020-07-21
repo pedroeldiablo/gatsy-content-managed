@@ -7,6 +7,7 @@ import { Box } from '../box'
 import { Header } from '../header'
 import { Footer } from '../footer'
 import '../../styles/index.scss'
+import { Button } from '../button/Button'
 import { GlobalStyle } from './Layout.styles'
 
 const LayoutContainer = styled.div`
@@ -29,11 +30,14 @@ export const Layout = props => {
       <GlobalStyle />
       <LayoutContainer>
         <Header></Header>
+        <Button text={`Are these props acceptable`}></Button>
+        <Button text={`Are these props acceptable`} isActive></Button>
         {/* <Box width={[1, 1, 1 / 2]} p={4} mb={3} bg="tomato">
           This is a tomato box, with responsive width, some padding, and margin
           bottom
         </Box> */}
         {props.children}
+
         <Footer></Footer>
       </LayoutContainer>
     </ThemeProvider>
